@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="CurseForgeToMcLauncher.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CurseForgeToMcLauncher"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="50,0,50,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Settings"
+                   Grid.Row="0"
+                   FontSize="30"
+                   HorizontalAlignment="Center"
+                   Margin="0,30,0,0"/>
+        <StackPanel Grid.Row="1"
+                    MaxWidth="500"
+                    Margin="0,30,0,0">
+            <StackPanel>
+                <TextBlock Text="Minecraft Folder Location" />
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox Height="35"
+                             Grid.Column="0"
+                             x:Name="MinecraftDirectoryTextbox"
+                             TextChanged="MinecraftDirectoryTextbox_TextChanged"/>
+                    <Button Width="70"
+                            Height="35"
+                            Content="Browse"
+                            Margin="10,0,0,0"
+                            Grid.Column="1"
+                            x:Name="BrowseMinecraftDir"
+                            Click="BrowseMinecraftDir_Click"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel Margin="0,30,0,0">
+                <TextBlock Text="Curseforge Modding Folder Location" />
+                <Grid Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox Height="35"
+                             Grid.Column="0"
+                             x:Name="CurseforgeDirectoryTextbox"
+                             TextChanged="CurseforgeDirectoryTextbox_TextChanged"/>
+                    <Button Width="70"
+                            Height="35"
+                            Content="Browse"
+                            Margin="10,0,0,0"
+                            Grid.Column="1"
+                            x:Name="BrowseCurseforgeDir"
+                            Click="BrowseCurseforgeDir_Click"/>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+        <Grid Grid.Row="2"
+              HorizontalAlignment="Center"
+              Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Save"
+                    x:Name="Save"
+                    Grid.Column="0"
+                    Width="120"
+                    Height="40"
+                    FontSize="17"
+                    Style="{StaticResource AccentButtonStyle}"
+                    Click="Save_Click"/>
+            <Button Content="Cancel"
+                    x:Name="Cancel"
+                    Grid.Column="1"
+                    Width="120"
+                    Height="40"
+                    FontSize="17"
+                    Margin="30,0,0,0"
+                    Click="Cancel_Click"/>
+        </Grid>
+    </Grid>
+</Page>

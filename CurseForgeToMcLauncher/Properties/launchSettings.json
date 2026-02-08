@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CurseForgeToMcLauncher (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "CurseForgeToMcLauncher (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
