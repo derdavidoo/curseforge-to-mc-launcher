@@ -9,14 +9,14 @@
 
   <Identity
     Name="b0fe7018-7151-4a26-a7b9-294bb6dbe174"
-    Publisher="CN=david"
-    Version="1.0.0.0" />
+    Publisher="CN=derdavidoo"
+    Version="1.1.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="b0fe7018-7151-4a26-a7b9-294bb6dbe174" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>CurseForgeToMcLauncher</DisplayName>
-    <PublisherDisplayName>david</PublisherDisplayName>
+    <PublisherDisplayName>derdavidoo</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

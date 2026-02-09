@@ -42,7 +42,7 @@ namespace CurseForgeToMcLauncher
                 return;
             }
 
-            if (!Path.Exists(Path.Combine(App.Settings.CurseForgePath, "Instances"))) 
+            if (!Path.Exists(Path.Combine(App.Settings.CurseForgePath, "Instances")))
             {
                 _ = new ContentDialog
                 {
@@ -55,7 +55,7 @@ namespace CurseForgeToMcLauncher
             }
             Frame.Navigate(typeof(PackSelector));
         }
-
+            
         private void Settings_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(SettingsPage));

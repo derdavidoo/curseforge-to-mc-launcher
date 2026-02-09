@@ -1,4 +1,6 @@
 using CurseForgeToMcLauncher.Views;
+using Microsoft.UI;
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -36,6 +38,11 @@ namespace CurseForgeToMcLauncher
         {
             AppWindow.Resize(new Windows.Graphics.SizeInt32(900, 500));
             ExtendsContentIntoTitleBar = true;
+
+            IntPtr windowHandle = WinRT.Interop.WindowNative.GetWindowHandle(this);
+            WindowId windowId = Win32Interop.GetWindowIdFromWindow(windowHandle);
+            AppWindow appWindow = AppWindow.GetFromWindowId(windowId);
+            appWindow.SetIcon(@"Assets\logo.ico");
         }
     }
 }

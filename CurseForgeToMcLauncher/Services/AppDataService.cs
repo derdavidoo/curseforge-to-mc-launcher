@@ -17,7 +17,7 @@ namespace CurseForgeToMcLauncher.Services
         public string LogsFolderPath => Path.Combine(AppDataDirectory.FullName, "logs");
         public AppDataService() 
         {
-            AppDataDirectory = new DirectoryInfo(ApplicationData.Current.RoamingFolder.Path);
+            AppDataDirectory = new DirectoryInfo(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "CurseForgeToMcLauncher"));
             AppDataDirectory.Create();
 
             ConfigFile = new FileInfo(Path.Combine(AppDataDirectory.FullName, "config.json"));
