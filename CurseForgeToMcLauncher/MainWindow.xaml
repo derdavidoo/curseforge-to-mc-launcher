@@ -15,10 +15,10 @@
 
     <Grid>
         <Grid.Background>
-            <LinearGradientBrush EndPoint="1,2"
+            <LinearGradientBrush EndPoint="3,3"
                                  StartPoint="0,0">
                 <GradientStop Color="Black" />
-                <GradientStop Color="#FF145477"
+                <GradientStop Color="{ThemeResource SystemAccentColor}"
                               Offset="0.99" />
             </LinearGradientBrush>
         </Grid.Background>
