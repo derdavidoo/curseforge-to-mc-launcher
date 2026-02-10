@@ -31,12 +31,12 @@ namespace CurseForgeToMcLauncher
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            if (!Path.Exists(App.Settings.MinecraftPath))
+            if (!Path.Exists(Path.Combine(App.Settings.MinecraftPath, "launcher_profiles.json")))
             {
                 _ = new ContentDialog
                 {
                     Title = "Minecraft Directory Not Found",
-                    Content = "The Minecraft directory specified in the settings could not be found. Please check your settings and try again. Check the guide on how to configure these Folders correctly.",
+                    Content = "The Minecraft directory specified in the settings is invalid. Please check your settings and try again. Check the guide on how to configure these Folders correctly.",
                     CloseButtonText = "OK",
                     XamlRoot = App.MainWindow.Content.XamlRoot
                 }.ShowAsync();
@@ -48,7 +48,7 @@ namespace CurseForgeToMcLauncher
                 _ = new ContentDialog
                 {
                     Title = "CurseForge Directory Not Found",
-                    Content = "The CurseForge directory specified in the settings could not be found. Please check your settings and try again. Check the guide on how to configure these Folders correctly",
+                    Content = "The CurseForge directory specified in the settings is invalid. Please check your settings and try again. Check the guide on how to configure these Folders correctly",
                     CloseButtonText = "OK",
                     XamlRoot = App.MainWindow.Content.XamlRoot
                 }.ShowAsync();
