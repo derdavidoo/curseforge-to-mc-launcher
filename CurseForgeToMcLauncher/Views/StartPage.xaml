@@ -26,19 +26,16 @@
                     <Image Source="/Assets/Image/logo.png"
                            Width="100"
                            HorizontalAlignment="Left" />
-                    <TextBlock Foreground="White"
-                               Text="Welcome to"
+                    <TextBlock Text="Welcome to"
                                TextWrapping="Wrap"
                                FontSize="15"
                                Margin="0,50,0,0"
                                FontFamily="ms-appx:///Assets/Fonts/Montserrat.ttf" />
                     <TextBlock Text="Curseforge to MC Launcher"
-                               Foreground="White"
                                FontSize="30"
                                TextWrapping="NoWrap"
                                FontFamily="ms-appx:///Assets/Fonts/Montserrat.ttf" />
-                    <TextBlock Foreground="White"
-                               Text="Start transfering your modpacks and games to the default Minecraft Launcher"
+                    <TextBlock Text="Start transfering your modpacks and games to the default Minecraft Launcher"
                                TextWrapping="Wrap"
                                FontSize="15"
                                Margin="0,15,0,0"
@@ -52,8 +49,8 @@
                                 HorizontalAlignment="Left"
                                 Style="{StaticResource AccentButtonStyle}"
                                 x:Name="Start"
-                                Click="Start_Click"/>
-                        
+                                Click="Start_Click" />
+
                         <Button Content="Settings"
                                 Width="120"
                                 Height="40"
@@ -61,7 +58,7 @@
                                 FontSize="17"
                                 HorizontalAlignment="Left"
                                 x:Name="Settings"
-                                Click="Settings_Click"/>
+                                Click="Settings_Click" />
                     </StackPanel>
 
 

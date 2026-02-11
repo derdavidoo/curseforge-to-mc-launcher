@@ -24,7 +24,7 @@
                 <TextBlock Text="{Binding LoaderVersion}"
                            Margin="10,10,10,10"
                            TextTrimming="CharacterEllipsis"
-                           Foreground="LightGray"/>
+                           FontSize="12"/>
             </StackPanel>
         </DataTemplate>
     </Page.Resources>
