@@ -15,7 +15,7 @@ It allows you to manage your mods in CurseForge while launching the game faster 
 <img width="500" height="278" alt="Unbenannt-1" src="https://github.com/user-attachments/assets/68bf8bd7-bc17-4bc6-9cfd-dca2c98b2e0b" />
 
 ## How to use
-1. Download the latest release of this tool and run the executable.
+1. [Download](https://github.com/derdavidoo/curseforge-to-mc-launcher/releases/download/v1.1/CurseForgeToMcLauncher.exe) the latest release of this tool and run the executable.
 2. Click the **Start** button, select all profiles you want to transfer, and run the tool.
 3. Open the Minecraft Launcher and enjoy.
 
